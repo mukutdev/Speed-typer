@@ -146,7 +146,7 @@ button {
   flex-wrap: wrap;
   gap: 10px;
   flex-wrap:wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .cards {
@@ -272,6 +272,14 @@ button {
   .box-container {
     padding: 0 20px;
     width: 100%;
+  }
+  #question{
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+  #display{
+    font-size: 18px;
+    padding: 4px 5px;
   }
   .cards {
     width: 100%;

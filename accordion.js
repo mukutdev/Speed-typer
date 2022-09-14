@@ -1,7 +1,4 @@
 let label = document.querySelectorAll(".box")
-
-
-
 label.forEach((e)=>{
     e.addEventListener("click", ()=>{
         removeClass()
