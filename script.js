@@ -15,7 +15,6 @@ let questionText = "";
 fetch("./texts.json")
   .then((res) => res.json())
   .then((data) => {
-    // console.log(data[Math.floor(Math.random() * data.length)]);
     questionText = data[Math.floor(Math.random() * data.length)];
     question.innerHTML = questionText;
   });
@@ -71,7 +70,6 @@ const gameOver = () => {
   const finishTime = new Date().getTime();
   const timeTaken = (finishTime - startTime) / 1000;
   const timeStr = timeTaken.toString().split('.')[0]
-  console.log(timeStr);
 
   // show result modal
   resultModal.innerHTML = "";
@@ -140,8 +138,5 @@ setInterval(() => {
   const currentTime = new Date().getTime();
   const timeSpent = (currentTime - startTime) / 1000;
   const timeStr = timeSpent.toString().split('.')[0]
-  // console.log(); 
-
-
   document.getElementById("show-time").innerHTML = `${startTime ? timeStr : 0} seconds`;
 }, 1000);
