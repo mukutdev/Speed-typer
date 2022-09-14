@@ -180,7 +180,24 @@ button {
   position: fixed;
   top: 0;
 }
-
+.nav-area{
+  display: flex;
+  justify-content: center;
+}
+.nav-area li{
+  list-style: none;
+}
+.nav-area li a{
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 20px;
+  text-transform: uppercase;
+}
+.nav-area li:hover a{
+ color:#9dffad;
+}
 @media only screen and (max-width: 700px) {
   .box-container {
     padding: 0 20px;
